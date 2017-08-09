@@ -1806,7 +1806,7 @@ export interface NodeOptions {
     color?: string,
   };
 
-  id?: string;
+  id?: IdType;
 
   image?: string;
 
@@ -1883,13 +1883,13 @@ export interface EdgeOptions {
     align?: string,
   };
 
-  from?: number | string;
+  from?: IdType;
 
   hidden?: boolean;
 
   hoverWidth?: number; // please note, hoverWidth could be also a function. This case is not represented here
 
-  id?: string;
+  id?: IdType;
 
   label?: string;
 
@@ -1916,7 +1916,7 @@ export interface EdgeOptions {
 
   title?: string;
 
-  to?: number | string;
+  to?: IdType;
 
   value?: number;
 
